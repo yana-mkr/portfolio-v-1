@@ -8,7 +8,7 @@ body{
     background-color:lightgray;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* Navigation bar */
 header {
     width: 100%;
     height: 80px;
@@ -37,4 +37,54 @@ nav a {
     text-align: center;
     flex-grow: 1;
     color:lightgray;
+}
+
+/* About me section */
+#about, #work {
+    display:flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+#about img {
+    width: 30%;
+    border-radius: 50%;
+    border-right:3px dotted dimgrey;
+}
+
+.bio {
+    display: flex;
+    flex-basis: 75%;
+}
+
+p {
+    flex-basis: 40%;
+    text-align: center;
+    padding: 100px;
+    line-height: 1.5;
+}
+
+h2 {
+    padding: 120px;
+    border-right:3px dotted dimgrey;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0px;
+    padding-left: 30px;
+}
+
+.projects img {
+    width: 30%;
+}
+.img1 {
+    flex: 1 0 100%;
+
+}
+
+.img2, .img3{
+    flex: 1 0 50%;
 }
