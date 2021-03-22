@@ -10,14 +10,15 @@ body{
 }
 /* Navigation bar */
 header {
-    width: 100%;
-    height: 80px;
-    padding: 0px 20px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 30px;
     background-color:dimgrey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    align-items: center;
+    background-size: cover;
+    position: sticky;
 }
 
 h1 {
@@ -69,6 +70,14 @@ h2 {
     border-right:3px dotted dimgrey;
 }
 
+#work h2 {
+    padding-right: 193px;
+}
+
+#contact h2 {
+    padding-left: 20px;
+}
+
 .projects {
     display: flex;
     flex-direction: row;
@@ -77,21 +86,27 @@ h2 {
     padding-left: 30px;
 }
 
-.projects img {
-    width: 30%;
-}
 .img1 {
-    flex: 1 0 100%;
+    flex: 0 0 75%;
+    max-width: 80%;
 }
 
 .img2, .img3{
-    flex: 1 0 50%;
+    flex: 0 0 20%;
+    max-width: 40%;
 }
 
+#contact h2 {
+    padding-left: 163px;
+}
 .contacts {
-    flex-basis: 60%;
     display: flex;
+    flex-grow: 2;
     font-size: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+}
+
+h3 {
+    padding: 100px;
 }
