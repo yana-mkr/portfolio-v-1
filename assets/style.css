@@ -40,7 +40,7 @@ nav a {
 }
 
 /* About me section */
-#about, #work {
+#about, #work, #contact {
     display:flex;
     justify-content: space-around;
     padding-top: 80px;
@@ -82,9 +82,16 @@ h2 {
 }
 .img1 {
     flex: 1 0 100%;
-
 }
 
 .img2, .img3{
     flex: 1 0 50%;
+}
+
+.contacts {
+    flex-basis: 60%;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
