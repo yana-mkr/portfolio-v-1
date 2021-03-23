@@ -19,11 +19,13 @@ header {
     align-items: center;
     background-size: cover;
     position: sticky;
+    z-index: 9999
 }
 
 h1 {
     flex-basis: 40%;
     color:floralwhite;
+    padding-left: 5px;
 }
 
 nav {
@@ -82,10 +84,22 @@ h2 {
     padding-left: 30px;
 }
 
+.box-caption {
+    position: absolute;
+    max-width: 300px;
+    margin: 0;
+    padding: 20px;
+    word-break: break-word;
+    font-size: 35px;
+    background-color: rgba(0,0,0,.7);
+    color: floralwhite;
+  }
+
 .img1 {
     flex: 0 0 75%;
     max-width: 80%;
 }
+
 .img2, .img3{
     flex: 0 0 20%;
     max-width: 40%;
