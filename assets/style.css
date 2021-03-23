@@ -74,10 +74,6 @@ h2 {
     padding-right: 193px;
 }
 
-#contact h2 {
-    padding-left: 20px;
-}
-
 .projects {
     display: flex;
     flex-direction: row;
@@ -90,7 +86,6 @@ h2 {
     flex: 0 0 75%;
     max-width: 80%;
 }
-
 .img2, .img3{
     flex: 0 0 20%;
     max-width: 40%;
@@ -99,6 +94,7 @@ h2 {
 #contact h2 {
     padding-left: 163px;
 }
+
 .contacts {
     display: flex;
     flex-grow: 2;
