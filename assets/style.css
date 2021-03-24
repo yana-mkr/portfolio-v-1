@@ -10,11 +10,11 @@ body{
 }
 /* Navigation bar */
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px 30px;
     background-color:dimgrey;
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     top: 0;
     align-items: center;
     background-size: cover;
@@ -30,14 +30,13 @@ h1 {
 
 nav {
     flex-basis: 60%;
-    display: flex;
     font-size: 20px;
 }
 
 nav a {
     text-decoration: none;
     padding: 5px;
-    padding-left: 240px;
+    flex-basis: 60%;
     text-align: center;
     color:lightgray;
 }
@@ -47,42 +46,47 @@ nav a {
     display:flex;
     justify-content: space-around;
     padding-top: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 #about img {
-    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
     border-radius: 50%;
     border-right:3px dotted dimgrey;
 }
 
 .bio {
     display: flex;
+    flex-wrap: wrap;
     flex-basis: 75%;
 }
 
 p {
+    display: flex;
     flex-basis: 70%;
+    align-items: center;
     text-align: center;
-    padding: 100px;
     line-height: 1.5;
 }
 
 h2 {
-    padding: 120px;
-    border-right:3px dotted dimgrey;
-    margin-bottom: 50px;
-}
-
-#work h2 {
-    padding-right: 193px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 10%;
+    border-right: 3px dotted dimgrey;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .projects {
+    flex-basis: 75%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     font-size: 0px;
-    padding-left: 30px;
 }
 
 .box-caption {
@@ -98,28 +102,25 @@ h2 {
 
 .img1 {
     flex: 0 0 75%;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .img2, .img3{
     flex: 0 0 20%;
-    max-width: 45%;
-}
-
-#contact h2 {
-    padding-left: 163px;
+    max-width: 50%;
 }
 
 .contacts {
     display: flex;
-    flex-grow: 2;
+    flex-wrap: wrap;
+    flex-basis: 75%;
     font-size: 20px;
     justify-content: center;
     align-items: center;
 }
 
 h3 {
-    padding: 100px;
+    padding: 80px;
 }
 
 .contacts a {
@@ -138,30 +139,25 @@ footer {
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
 
-    #about img {
-        flex: 1 100%;
-    }
 
     p {
+        padding: 15px;
         flex: 100%;
-    }
-
-    #work h2, #about h2 {
-        padding-right: 40px;
+        font-size: 25px;
     }
 
     h2 {
+        font-size: 50px;
         padding: 0;
+        padding-bottom: 15px;
         border-right: none;
-        margin-left: 10px;
+        align-items: center;
+        justify-content: center;
     }
 
-    .bio {
+    .bio, .work, .projects, .contacts {
         flex-basis: 100%;
-    }
-
-    #contact h2 {
-        padding: 0;
+        justify-content: center;
     }
 
     h3 {
@@ -182,3 +178,65 @@ footer {
       nav a { 
           padding-left: 100px;
       }
+
+       /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+    nav a { 
+        padding-left: 40px;
+        font-size: 25px;
+    }
+
+    #about img {
+        flex: 2 100%;
+    }
+
+    p {
+        flex: 100%;
+    }
+
+     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+    header {
+        padding: 3px;
+        text-align: center;
+        background-color: rgba(0,0,0,.5);
+    }
+
+    h1 { 
+        flex-basis: 60%;
+        font-size: 40px;
+        color: floralwhite;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    nav { 
+        flex-basis: 40%;
+    }
+
+    header a {
+        color: floralwhite;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+    padding: 15px;
+    }
+
+    #about, #work, #contact {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    .img2, .img3 {
+    flex: 0 0 75%;
+    max-width: 100%;
+    }
+
+    #about img {
+    max-width: 80%;
