@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+A project to demonstrate building from scratch, first only using html and css.
+This project consisted of creating a bio, showing recent applications with links, demonstrating different image sizing, creating a responsive layout, and more. 
+
+
 <!--
 **yana-mkr/yana-mkr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
